@@ -1,14 +1,33 @@
-# Array Utils — Lightweight Array Helper (JS & TS)
+# 📦 Array Utils — Lightweight Array Helper Library (JS & TS)
 
-A clean, zero-dependency utility library for working with arrays in JavaScript and TypeScript. Includes functions like `unique`, `chunk`, `shuffle`, `flatten`, `average`, and more.
+[![npm version](https://img.shields.io/npm/v/arr-lib.svg)](https://npmjs.com/package/arr-lib)
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+![types](https://img.shields.io/badge/TypeScript-Ready-blue)
 
-## 🚀 Installation
+A clean, type-safe, zero-dependency array utility library for JavaScript and TypeScript.
+Includes essential helpers like `unique`, `chunk`, `shuffle`, `flatten`, `sum`, and more.
+
+---
+
+## ⭐ Features
+
+- 🚀 Zero dependencies
+- 🔒 Strong TypeScript types
+- ⚡ Fast & efficient algorithms
+- 📘 Clean class-based API
+- 🧪 Works in Node.js & Browser
+
+---
+
+## 📦 Installation
 
 ```bash
 npm install arr-lib
 ```
 
-## 🔰 Quick Usage (JavaScript)
+---
+
+## 🔰 Quick Start (JavaScript)
 
 ```js
 const { ArrayUtils } = require("arr-lib");
@@ -20,7 +39,9 @@ console.log(utils.getFirstAndLast()); // { first: 1, last: 4 }
 console.log(utils.chunk(2)); // [[1,2],[3,3],[4]]
 ```
 
-## 🔰 Quick Usage (TypeScript)
+---
+
+## 🔰 Quick Start (TypeScript)
 
 ```ts
 import { ArrayUtils } from "arr-lib";
@@ -34,7 +55,7 @@ console.log(arr.shuffle());
 
 ---
 
-## 📚 API Overview
+# 📚 API Documentation
 
 ### `new ArrayUtils<T>(array: T[])`
 
@@ -44,56 +65,74 @@ Creates an instance.
 
 ### Methods
 
-#### `getFirstAndLast()`
+#### 🔹 `getFirstAndLast()`
 
-Returns:
+Returns first & last element.
 
-```ts
-{ first: T | null, last: T | null }
-```
-
-#### `unique()`
+#### 🔹 `unique()`
 
 Removes duplicates.
 
-#### `reversed()`
+#### 🔹 `reversed()`
 
-Returns reversed copy.
+Reversed copy (non-mutating).
 
-#### `chunk(size: number)`
+#### 🔹 `chunk(size)`
 
-Splits array into chunks.
+Splits into chunks.
 
-#### `isUnique()`
+#### 🔹 `isUnique()`
 
 Checks if all values are unique.
 
-#### `flatten()`
+#### 🔹 `flatten()`
 
-Flattens nested arrays (1 level).
+Flattens arrays one level.
 
-#### `sum()` _(numbers only)_
+#### 🔹 `sum()`
 
-Returns sum.
+Sum of numbers.
 
-#### `average()` _(numbers only)_
+#### 🔹 `average()`
 
-Returns mean.
+Average of numbers.
 
-#### `compact()`
+#### 🔹 `compact()`
 
 Removes falsy values.
 
-#### `shuffle()`
+#### 🔹 `shuffle()`
 
-Shuffles array.
+Randomizes array order.
 
-#### `random()`
+#### 🔹 `random()`
 
-Returns random element.
+Returns a random item.
 
 ---
 
-## 📝 License
+# 🗂 Project Structure
 
-MIT
+```
+src/
+ ├─ arrayUtils.ts
+ └─ index.ts
+dist/
+package.json
+tsconfig.json
+README.md
+LICENSE
+```
+
+---
+
+# 🤝 Contributing
+
+PRs and feature requests are welcome!
+Feel free to open issues or submit improvements.
+
+---
+
+# 📄 License
+
+MIT — free for personal & commercial use.
