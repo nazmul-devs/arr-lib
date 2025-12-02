@@ -5,13 +5,13 @@ A clean, zero-dependency utility library for working with arrays in JavaScript a
 ## 🚀 Installation
 
 ```bash
-npm install array-utils-nazmul
+npm install arr-lib
 ```
 
 ## 🔰 Quick Usage (JavaScript)
 
 ```js
-const { ArrayUtils } = require("array-utils-nazmul");
+const { ArrayUtils } = require("arr-lib");
 
 const utils = new ArrayUtils([1, 2, 3, 3, 4]);
 
@@ -23,7 +23,7 @@ console.log(utils.chunk(2)); // [[1,2],[3,3],[4]]
 ## 🔰 Quick Usage (TypeScript)
 
 ```ts
-import { ArrayUtils } from "array-utils-nazmul";
+import { ArrayUtils } from "arr-lib";
 
 const arr = new ArrayUtils([10, 20, 30]);
 

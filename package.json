@@ -1,0 +1,25 @@
+{
+  "name": "arr-lib",
+  "version": "1.0.0",
+  "description": "A lightweight library package for array operations (JS & TS)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "array",
+    "lib",
+    "utils",
+    "arr",
+    "arr-lib",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Nazmul Hosen",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
