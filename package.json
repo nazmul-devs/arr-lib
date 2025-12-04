@@ -1,6 +1,6 @@
 {
   "name": "arr-lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight library package for array operations (JS & TS)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
