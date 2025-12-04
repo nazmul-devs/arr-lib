@@ -96,6 +96,7 @@ console.log(arrShuffle(data)); // Randomized order
 | `countBy(fn)`              | Count elements by criteria         |
 | `distinctBy(fn)`           | Remove duplicates by selector      |
 | `remove(value)`            | Remove all matching values         |
+| `union(other)`             | Create union of two arrays         |
 | `take(n)` / `skip(n)`      | Pagination helpers                 |
 
 ### Standalone Functions
@@ -108,6 +109,7 @@ console.log(arrShuffle(data)); // Randomized order
 | `arrFirst(array)` / `arrLast(array)` | First/last elements       |
 | `arrRandom(array)`                   | Random element            |
 | `arrShuffle(array)`                  | Shuffle array             |
+| `arrUnion(array, other)`             | Union of two arrays       |
 
 ## 📖 Examples
 
@@ -153,6 +155,41 @@ const currentPage = 3;
 
 const pageData = items.skip((currentPage - 1) * pageSize).take(pageSize);
 // [21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+```
+
+### Array Union Operations
+
+```typescript
+import { ArrayUtils } from "arr-lib";
+
+// Class-based API
+const utils = new ArrayUtils([1, 2, 3]);
+const other = [3, 4, 5];
+console.log(utils.union(other)); // [1, 2, 3, 4, 5]
+
+// Functional API
+const arr1 = [1, 2, 3];
+const arr2 = [3, 4, 5];
+console.log(arrUnion(arr1, arr2)); // [1, 2, 3, 4, 5]
+
+// Works with objects too
+interface User {
+  id: number;
+  name: string;
+}
+
+const teamA = new ArrayUtils<User>([
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+]);
+
+const teamB = [
+  { id: 2, name: "Bob" }, // duplicate
+  { id: 3, name: "Charlie" },
+];
+
+console.log(teamA.union(teamB));
+// [{ id: 1, name: 'Alice' }, { id: 2, name: 'Bob' }, { id: 3, name: 'Charlie' }]
 ```
 
 ## 🎯 Why arr-lib?

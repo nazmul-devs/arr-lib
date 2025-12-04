@@ -150,4 +150,13 @@ export class ArrayUtils<T> {
       ? (sorted[mid - 1] + sorted[mid]) / 2
       : sorted[mid];
   }
+
+  /**
+   * Creates a union of two arrays, removing duplicates.
+   * @param other The array to union with
+   * @returns A new array containing unique elements from both arrays
+   */
+  union(other: T[]): T[] {
+    return [...new Set([...this.arr, ...other])];
+  }
 }

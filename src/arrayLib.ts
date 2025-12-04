@@ -101,4 +101,14 @@ export class ArrayLib {
   skip<T = any>(arr: T[], n: number): T[] {
     return arr.slice(n);
   }
+
+  /**
+   * Creates a union of two arrays, removing duplicates.
+   * @param arr The first array
+   * @param other The array to union with
+   * @returns A new array containing unique elements from both arrays
+   */
+  union<T = any>(arr: T[], other: T[]): T[] {
+    return [...new Set([...arr, ...other])];
+  }
 }

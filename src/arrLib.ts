@@ -30,3 +30,13 @@ export const arrRandomIntInclusive = (arr: number[]): number | null =>
     ? Math.floor(Math.random() * (Math.max(...arr) - Math.min(...arr) + 1)) +
       Math.min(...arr)
     : null;
+
+/**
+ * Creates a union of two arrays, removing duplicates.
+ * @param arr The first array
+ * @param other The array to union with
+ * @returns A new array containing unique elements from both arrays
+ */
+export const arrUnion = <T = any>(arr: T[], other: T[]): T[] => {
+  return [...new Set([...arr, ...other])];
+};
