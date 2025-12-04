@@ -9,25 +9,27 @@ Includes essential helpers like `unique`, `chunk`, `shuffle`, `flatten`, `sum`, 
 
 ---
 
-## ⭐ Features
+## Features
 
-- 🚀 Zero dependencies
-- 🔒 Strong TypeScript types
-- ⚡ Fast & efficient algorithms
-- 📘 Clean class-based API
-- 🧪 Works in Node.js & Browser
+- Zero dependencies
+- Strong TypeScript types
+- Fast & efficient algorithms
+- Clean class-based API
+- Works in Node.js & Browser
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install arr-lib
+# or
+pnpm add arr-lib
 ```
 
 ---
 
-## 🔰 Quick Start (JavaScript)
+## Quick Start (JavaScript)
 
 ```js
 const { ArrayUtils } = require("arr-lib");
@@ -41,7 +43,7 @@ console.log(utils.chunk(2)); // [[1,2],[3,3],[4]]
 
 ---
 
-## 🔰 Quick Start (TypeScript)
+## Quick Start (TypeScript)
 
 ```ts
 import { ArrayUtils } from "arr-lib";
@@ -55,7 +57,7 @@ console.log(arr.shuffle());
 
 ---
 
-# 📚 API Documentation
+# API Documentation
 
 ### `new ArrayUtils<T>(array: T[])`
 
@@ -109,6 +111,34 @@ Randomizes array order.
 
 Returns a random item.
 
+#### 🔹 `min() / max()`
+
+Returns smallest or largest number.
+
+#### 🔹 `median()`
+
+Returns middle value from a numeric array.
+
+#### 🔹 `groupBy(fn)`
+
+Groups items by key.
+
+#### 🔹 `countBy(fn)`
+
+Counts items based on criteria.
+
+#### 🔹 `distinctBy(fn)`
+
+Removes duplicates based on a custom selector.
+
+#### 🔹 `remove(value)`
+
+Removes all matching values.
+
+#### 🔹 `take(n) / skip(n)`
+
+Useful for slicing, pagination.
+
 ---
 
 # 🗂 Project Structure
@@ -126,7 +156,7 @@ LICENSE
 
 ---
 
-# 🤝 Contributing
+# Contributing
 
 PRs and feature requests are welcome!
 Feel free to open issues or submit improvements.
