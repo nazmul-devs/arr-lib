@@ -1,4 +1,4 @@
-# 📦 Array Utils — Lightweight Array Helper Library (JS & TS)
+# Array Utils — Lightweight Array Helper Library (JS & TS)
 
 [![npm version](https://img.shields.io/npm/v/arr-lib.svg)](https://npmjs.com/package/arr-lib)
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
