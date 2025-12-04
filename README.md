@@ -24,6 +24,8 @@ Includes essential helpers like `unique`, `chunk`, `shuffle`, `flatten`, `sum`, 
 ```bash
 npm install arr-lib
 # or
+yarn add arr-lib
+# or
 pnpm add arr-lib
 ```
 
