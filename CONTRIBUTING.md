@@ -42,7 +42,7 @@ Click the **Fork** button at the top-right of the repo.
 ### 2. Clone your fork
 
 ```bash
-git clone https://github.com/<your-username>/arr-lib.git
+git clone https://github.com/nazmul-devs/arr-lib.git
 cd arr-lib
 ```
 
