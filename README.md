@@ -253,7 +253,7 @@ Contributions are welcome! Please see our [contributing guidelines](CONTRIBUTING
 
 ## 📄 License
 
-MIT © [Nazmul Hosen](https://github.com/nazmulhossen)
+MIT © [Nazmul Hosen](https://github.com/nazmul-devs)
 
 See [LICENSE](LICENSE) for more information.
 
